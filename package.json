@@ -1,0 +1,34 @@
+{
+  "type": "module",
+  "name": "type-expand",
+  "version": "0.1.0",
+  "description": "Utilities to expand TypeScript types shown by IntelliSense in Visual Studio Code.",
+  "types": "index.d.ts",
+  "scripts": {
+    "format": "prettier --write .",
+    "test": "tsd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shian15810/type-expand.git"
+  },
+  "keywords": [
+    "typescript",
+    "utility",
+    "type",
+    "expand",
+    "intellisense",
+    "vscode"
+  ],
+  "author": "Chuah Chee Shian <shian15810@gmail.com> (https://github.com/shian15810)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shian15810/type-expand/issues"
+  },
+  "homepage": "https://github.com/shian15810/type-expand#readme",
+  "devDependencies": {
+    "@types/prettier": "^2.1.5",
+    "prettier": "^2.1.2",
+    "tsd": "^0.13.1"
+  }
+}
