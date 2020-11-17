@@ -1,11 +1,12 @@
+/* eslint-env node */
 // @ts-check
 
 /**
  * @type {import('prettier').Options}
  */
-const config = {
+const options = {
   singleQuote: true,
   trailingComma: 'all',
 };
 
-module.exports = config;
+module.exports = options;
