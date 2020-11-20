@@ -1,11 +1,3 @@
 {
-  "extends": "@tsconfig/recommended/tsconfig.json",
-  "compilerOptions": {
-    "importsNotUsedAsValues": "error",
-    "isolatedModules": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    // "noUncheckedIndexedAccess": true,
-    "target": "esnext"
-  }
+  "extends": "typesafeconfig/tsconfig.json"
 }

@@ -5,9 +5,13 @@
   "description": "Utilities to expand TypeScript types shown by IntelliSense in Visual Studio Code.",
   "types": "index.d.ts",
   "scripts": {
-    "format": "prettier --write .",
-    "lint": "eslint --ext .cjs --ext .ts .",
-    "test": "tsd"
+    "lint:eslint": "eslint . --ext .cjs --ext .ts",
+    "lint:prettier": "prettier . --check",
+    "lint:typescript": "tsc --noEmit",
+    "lint": "npm-run-all --parallel lint:*",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix:prettier": "npm run lint:prettier -- --write",
+    "fix": "npm-run-all fix:*"
   },
   "repository": {
     "type": "git",
@@ -27,16 +31,20 @@
     "url": "https://github.com/shian15810/type-expand/issues"
   },
   "homepage": "https://github.com/shian15810/type-expand#readme",
+  "dependencies": {
+    "type-fest": "^0.19.0"
+  },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.1",
-    "@types/node": "^14.14.7",
+    "@types/eslint": "^7.2.5",
+    "@types/node": "^14.14.9",
     "@types/prettier": "^2.1.5",
-    "@typescript-eslint/eslint-plugin": "^4.8.0",
-    "@typescript-eslint/parser": "^4.8.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
-    "tsd": "^0.13.1",
-    "typescript": "^4.0.5"
+    "typesafeconfig": "^1.2.0",
+    "typescript": "^4.1.2"
   }
 }
