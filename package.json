@@ -1,17 +1,10 @@
 {
-  "type": "module",
   "name": "type-expand",
   "version": "0.1.0",
   "description": "Utilities to expand TypeScript types shown by IntelliSense in Visual Studio Code.",
   "types": "index.d.ts",
   "scripts": {
-    "lint:eslint": "eslint . --ext .cjs --ext .ts",
-    "lint:prettier": "prettier . --check",
-    "lint:typescript": "tsc --noEmit",
-    "lint": "npm-run-all --parallel lint:*",
-    "fix:eslint": "npm run lint:eslint -- --fix",
-    "fix:prettier": "npm run lint:prettier -- --write",
-    "fix": "npm-run-all fix:*"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,29 +15,15 @@
     "utility",
     "type",
     "expand",
+    "expanddeep",
     "intellisense",
-    "vscode"
+    "vscode",
+    "hover"
   ],
   "author": "Chuah Chee Shian <shian15810@gmail.com> (https://github.com/shian15810)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shian15810/type-expand/issues"
   },
-  "homepage": "https://github.com/shian15810/type-expand#readme",
-  "dependencies": {
-    "type-fest": "^0.19.0"
-  },
-  "devDependencies": {
-    "@types/eslint": "^7.2.5",
-    "@types/node": "^14.14.9",
-    "@types/prettier": "^2.1.5",
-    "@typescript-eslint/eslint-plugin": "^4.8.1",
-    "@typescript-eslint/parser": "^4.8.1",
-    "eslint": "^7.13.0",
-    "eslint-config-prettier": "^6.15.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.2",
-    "typesafeconfig": "^1.2.0",
-    "typescript": "^4.1.2"
-  }
+  "homepage": "https://github.com/shian15810/type-expand#readme"
 }
