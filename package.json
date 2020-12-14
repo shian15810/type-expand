@@ -1,6 +1,6 @@
 {
   "name": "type-expand",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Utilities to expand TypeScript types shown by IntelliSense in Visual Studio Code.",
   "types": "index.d.ts",
   "scripts": {
